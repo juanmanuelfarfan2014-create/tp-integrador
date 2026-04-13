@@ -1,0 +1,450 @@
+:root {
+--color-primary: #EB192C;
+--color-secondary: #f80505;
+--color-accent: #250505;
+--color-text: #010b18;
+--color-bg: #F8FAFC;
+--radius: 8px;
+--shadow: 0 2px 8px rgba(0,0,0,0.1);
+--font-main: "Inter", "Segoe UI", Arial, sans-serif;
+}* 
+
+body {
+    font-family: var(--font-main); 
+    font-size: 1rem;               
+    line-height: 1.6;              
+    color: var(--color-accent);     
+    background-color: var(--color-accent); 
+}
+
+h1 {
+    font-size: 2.5rem; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+}
+
+h3 {
+    font-size: 1.3rem; 
+}
+header {
+    background-color: var(--color-secondary); 
+    color: white;       
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;      
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+.contenedor-tarjetas {
+    display: flex;          
+    flex-wrap: wrap;        
+    gap: 1.5rem;            
+    padding: 2rem;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow);    
+    flex: 1 1 280px;             
+    transition: 0.3s;             
+    border-top: 5px solid var(--color-primary); 
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);  
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero {
+    display: flex;                
+    justify-content: center;      
+    align-items: center;          
+    min-height: 80vh;             
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/fondo-estadio.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;                 
+    text-align: center;
+}
+
+.btn-cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-accent); 
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    filter: brightness(1.1);
+}
+
+header { grid-area: header; }
+.sidebar { grid-area: sidebar; background-color: #f0f0f0; padding: 20px; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    min-height: 100vh; 
+}
+
+.galeria-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 1.25rem; 
+    padding: 20px;
+}
+
+.tarjeta-grid {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow);    
+    text-align: center;
+}
+
+
+
+{
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+
+#hero {
+    padding-top: 1rem;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-text);
+    padding: 0 1rem;
+    background-image: url("imagenes/monu.jpeg");
+    border-radius: 35px;
+
+    
+}
+
+#hero  h1 {
+    font-size 4rem;
+    margin-bottom: 3rem;
+    
+
+}
+
+
+
+#historia h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+
+
+}
+
+.libertadores-card img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 35px;
+
+}
+
+.libertadores-card h3 {
+    padding: 2rem;
+    color: var(--color-text);
+}
+.libertadores-card h1 {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-text);
+}
+
+
+#libertadores h1 {
+    text-align: center;
+}
+
+.contenedor {
+    background-image: url("");
+}
+
+
+footer p {
+    text-align: center;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    padding: 20px;
+}
+
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc; 
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+
+
+
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+    border-color: #2ecc71;
+    background-color: var(--color-bg);
+}
+
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: #e74c3c;
+    background-color: var(--color-bg);
+}
+
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo-checkbox input {
+    width: auto; 
+    margin: 0;
+}
+
+.label-inline {
+    display: inline !important; 
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-bg);
+      HEAD
+    color: var(--color-text);
+    color: var(--color-text);
+ feature/mejoras-estilos
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--color-bg);
+      
+}
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+aside {
+    display: none; 
+}
+
+.container {
+    padding: 10px; 
+}
+
+
+img {
+    display: block !important;   
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100%;             
+    height: auto;
+}
+
+header {
+    width: 100% !important;
+    background-color: #d60f16 !important;
+    padding: 20px 0 !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+* {
+    box-sizing: border-box; 
+}
+
+.main-container {
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.galeria-proyectos {
+    display: grid !important;
+    width: 100% !important; 
+    gap: 20px;
+    grid-template-columns: 1fr !important; 
+}
+
+.tarjeta-grid {
+    width: 100% !important;
+    background-color: #f0f0f0; 
+    border: 2px solid #d11c1c; 
+    padding: 40px 20px; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+.noticias-lateral {
+    display: none; 
+    width: 100%;
+    background: #faf2f2;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .galeria-proyectos {
+        grid-template-columns: 1fr 1fr !important; 
+    }
+    
+    .noticias-lateral {
+        display: block !important; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        width: 95% !important; 
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.footer-container { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.social-links { display: flex; gap: 20px; }
+.social-link { color: white; text-decoration: none; }
+
+/* uno1 /*
